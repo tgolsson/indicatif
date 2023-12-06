@@ -786,7 +786,7 @@ mod tests {
         ];
 
         for case in lines_and_expectations.iter() {
-            let result = super::real_line_count(&case.lines, case.width);
+            let result = super::real_line_count(case.lines, case.width);
             assert_eq!(result, case.expectation, "case: {:?}", case);
         }
     }
